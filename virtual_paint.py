@@ -7,10 +7,10 @@ cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 cap.set(10,150)
 
-myColors = [[74,92,63,108,255,255],
+myColors = [[74,92,63,108,255,255],    ## Hue min, Sat min, Value min, Hue max, Sat max, Value max
             [133,56,0,159,156,255]
             ]
-myColorValues = [[172,230,0],          ## BGR
+myColorValues = [[172,230,0],          ## BGR value of color to be used
                  [172,230,0]
                  ]
 
