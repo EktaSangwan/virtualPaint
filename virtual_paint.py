@@ -7,11 +7,13 @@ cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 cap.set(10,150)
 
-myColors = [[74,92,63,108,255,255],    ## Hue min, Sat min, Value min, Hue max, Sat max, Value max
-            [133,56,0,159,156,255]
-            ]
-myColorValues = [[172,230,0],          ## BGR value of color to be used
-                 [172,230,0]
+myColors = [[39,65,51,171,255,255],    ## Hue min, Sat min, Value min, Hue max, Sat max, Value max
+            [20,88,133,179,255,255]      ## These values are set in accordance to make the only object visible to camera whose color is going to be used. 
+            ]                               ## [THERE IS WHOLE DIFFERENT CODE TO FIND THIS :) ---> Can ask for it or will upload soon ]
+
+
+myColorValues = [[84,230,0],          ## BGR value of color to be used
+                 [117,32,243]
                  ]
 
 myPoints =  []  ## [x , y , colorId ]
@@ -29,7 +31,7 @@ def findColor(img,myColors,myColorValues):
         if x!=0 and y!=0:
             newPoints.append([x,y,count])
         count +=1
-        #cv2.imshow(str(color[0]),mask)
+        #cv2.imshow(str(color[0]),mask)   ## This is to see the masked object only
     return newPoints
 
 def getContours(img):
