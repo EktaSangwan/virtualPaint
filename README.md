@@ -4,3 +4,4 @@ What does it mean?
 
 ==> It means you can use object of interest (I have used marker). Move that object in front of WebCam and there you go.
 
+<img src="/VirtualPaint.png">
